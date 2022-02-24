@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .wrapper {
+            width: 933px;
+            height: 800px;
+            background-color: rgb(10, 10, 10);
+        }
+        .column {
+            display:inline-block;
+            height: 100%;
+            width: 300px;
+        }
+        .column1 {
+            background-color: green;
+        }
+        .column2 {
+            background-color: white;
+        }
+        .column3 {
+            background-color: orange;
+        }
+        @media screen and (min-width: 1200px) {
+            .wrapper {
+                width: 100%;
+                z-index: 13;
+            }
+            .column {
+                width: 400px;
+            }
+        }
+        @media screen and (max-width: 1199px) and (min-width: 900px) {
+            .wrapper {
+                z-index: 13;
+            }
+            .column {
+                width: 33%;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .wrapper {
+                z-index: 13;
+            }
+            .column {
+                display: block;
+                height: 200px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class = "wrapper">
+
+        <div class = "column column1"></div>
+        <div class = "column column2"></div>
+        <div class = "column column3"></div>
+        <div class = "column"></div>
+
+</div>
+
+</body>
+</html>
